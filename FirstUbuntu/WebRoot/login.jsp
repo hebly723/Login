@@ -9,14 +9,16 @@
   		document.bgColor="Green";
   	</script>
      <form action="loginAction" method="post" align = "center">
-     	用户名<input type="text" name="name" align = "left"><br/>
-     	密码	 <input type="password" name="password" align = "left"><br/>
+     	用户名<input type="text" name="user.name" align = "left"><br/>
+     	密码	 <input type="password" name="user.password" align = "left"><br/>
      	<input type="submit" value="登录" align = "left"><br/>
      	使用action的属性接受参数
      	<ul>
      	<li><a href="loginAction?name=www&password=qqq">名字是www密码是qqq</a></li>
      	<li><a href="loginAction?name=Dick&password=dick">名字是Dick密码是dick</a></li>
         </ul>
+        试试看有没有动了
+        再试
      </form>
   </body>
 </html>

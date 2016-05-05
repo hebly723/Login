@@ -11,6 +11,7 @@
 		document.setcolor = "blue";
 	</script>
 	<s:property value="name"/>
+	<s:property value="info"/>
 	登录成功
   </body>
 </html>
