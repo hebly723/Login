@@ -6,6 +6,7 @@
   </head>
   <body>
     <font color="red">
+    更新
     	<s:property value="info"/>
     </font>
   </body>

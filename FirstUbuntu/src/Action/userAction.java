@@ -5,11 +5,12 @@ public class userAction {
 	private String name;
 	private String password;
 	public String info;
+	public Model.model user = new Model.model();
 	
 	//execute method(1)
 	public String execute() throws Exception{
-		System.out.println("用户名："+this.name+"\n密码："+this.password);
-		if (getName().equals("Dick")&&getPassword().equals("Free"))
+		System.out.println("用户名："+this.user.getName()+"\n密码："+this.user.getPassword());
+		if (this.user.getName().equals("Dick")&&this.user.getPassword().equals("Free"))
 			return ActionSupport.SUCCESS;
 		else
 			return ActionSupport.ERROR;
@@ -18,7 +19,7 @@ public class userAction {
 	//execute method(2)
 	public String login() throws Exception{
 		System.out.println("用户名："+this.name+"\n密码："+this.password);
-		if (getName().equals("Dick")&&getPassword().equals("dick"))
+		if (this.user.getName().equals("Dick")&&this.user.getPassword().equals("dick"))
 			return ActionSupport.SUCCESS;
 		else
 			return ActionSupport.ERROR;
@@ -35,21 +36,6 @@ public class userAction {
 		info = "更新用户信息";
 		return "update";
 	}
-	
-	//getter and setters
-	public String getName() {
-		return name;
-	}
-	public void setName(String userName) {
-		this.name = userName;
-	}
-	public String getPassword() {
-		return password;
-	}
-	public void setPassword(String password) {
-		this.password = password;
-	}
-
 	public String getInfo() {
 		return info;
 	}

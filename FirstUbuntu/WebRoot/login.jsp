@@ -9,10 +9,9 @@
   	<script type="text/javascript" language="JavaScript">
   		document.bgColor="Green";
   	</script>
-     <form action="K" method="post" align = "center">
-     	用户名<s:textfield name="user.name"  label = "用户名" ></s:textfield><br/>
+     <form action="loginAction" method="post" align = "center">
+     	<s:textfield name="user.name"  label = "用户名" ></s:textfield><br/>
      	密码	 <input type="password" name="user.password" align = "left"><br/>
-        客户<input type="text" name="gg" align = "left"><br/>
      	<input type="submit" value="登录" align = "left"><br/>
      	使用action的属性接受参数
      	<ul>
