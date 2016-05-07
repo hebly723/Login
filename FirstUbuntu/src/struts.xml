@@ -5,6 +5,10 @@
   <constant name="struts.devMode" value="false"/>
   <constant name="struts.i18n.encoding" value="GBK"/>
   <package name="default" namespace="/"     extends="struts-default">
+    <default-action-ref name = "index"/>
+    <action name = "index">
+    <result>/index.jsp</result>
+    </action>
     <action name="*Action" class="Action.action" method="{1}">
       <result name="success">/success.jsp</result>
       <result name="error">/error.jsp</result>

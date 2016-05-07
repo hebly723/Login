@@ -10,8 +10,10 @@
     <script type="text/javascript " language = "JavaScript">
 		document.setcolor = "blue";
 	</script>
-	<s:property value="name"/>
-	<s:property value="info"/>
+	<s:property value="user.name"/>
+	<s:property value="info"/><br/>
+	<!-- 您好：<s:property value="#session.user.name"/> -->
+	<!-- 您好：<%//=session.getAttribute("user.name") %>  -->
 	登录成功
   </body>
 </html>
